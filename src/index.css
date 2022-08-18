@@ -1,5 +1,4 @@
 * {
-  font-family: 'Comic Neue', cursive;
   margin:0; padding:0;
   box-sizing: border-box;
   outline: none; border: none;
@@ -9,6 +8,15 @@
 body {
   height: 100vh;
   width: 100%;
+}
+
+button{
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: HelveticaMd, sans-serif;
+  src: url(fonts/helvetica/HelveticaNeueMedium.ttf);
 }
 
 
