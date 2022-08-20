@@ -2,7 +2,7 @@
     width: 340px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .forms > label, .radio {
@@ -21,8 +21,13 @@
     opacity: 1;
 }
 
+.radio{
+    display: flex;
+    margin-bottom: 20px;
+}
+
 .radio > label{
-    margin: 0px 15px 0px 5px;
+    margin: 0px 35px 0px 5px;
 }
 
 .btn {
@@ -35,4 +40,9 @@
     border: 1px solid #707070;
     border-radius: 4px;
     opacity: 1;
+}
+
+.btn:hover{
+    color: #fff;
+    background-color: black;
 }

@@ -1,0 +1,60 @@
+.fSec {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 100px;
+    padding: 50px;
+}
+
+.divText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    width: 30%;
+}
+
+.t1 {
+    font-size: 24px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+.p1, .p2 {
+    font-size: 14px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+.sSec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.selection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.line {
+    margin-top: 10px;
+    width: 360px;
+    border-top: 2px solid #707070;
+}
+
+.t2 {
+    font-size: 22px;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
