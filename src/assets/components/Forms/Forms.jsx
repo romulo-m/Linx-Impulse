@@ -14,9 +14,9 @@ const Forms = () => {
         <Label conteudo={'CPF:'}/>
         <Input type={'text'} name={'cpf'} style={style.inputText}/>
         <div className={style.radio}>
-        <Input type={'radio'}  style={style.inputRadio}/> 
+        <Input type={'radio'} name={'sexo'} style={style.inputRadio}/> 
         <Label conteudo={'Masculino'}/>
-        <Input type={'radio'}  style={style.inputRadio}/>
+        <Input type={'radio'} name={'sexo'} style={style.inputRadio}/>
         <Label conteudo={'Feminino'}/>
         </div>
         <Button conteudo={'Enviar'} style={style.btn}/>

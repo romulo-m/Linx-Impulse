@@ -1,8 +1,9 @@
 import React from "react";
 import Text from "../Text/Text.jsx";
 import Forms from "../Forms/Forms";
+import SecForms from "../SecForms/SecForms.jsx";
+import Footer from "../Footer/Footer.jsx";
 import style from "./Main.module.css";
-import SecForms from "../secForms/secForms.jsx";
 
 const Main = () => {
   return (
@@ -36,6 +37,7 @@ const Main = () => {
           </div>
       </section>
       <SecForms />
+      <Footer />
       
 
 
