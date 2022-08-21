@@ -1,3 +1,11 @@
+main {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .fSec {
     display: flex;
     width: 100%;
@@ -42,7 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     padding: 20px;
 }
 
@@ -57,4 +65,27 @@
     letter-spacing: 0px;
     color: #888888;
     opacity: 1;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 932px;
+}
+
+.btn {
+    font-size: 16px;
+    border: 1px solid #707070;
+    background: #FFFFFF;
+    border-radius: 4px;
+    color: #888888;
+    width: 260px;
+    height: 39px;
+    margin: 50px 0 100px 0;
+}
+
+.btn:hover {
+    color: #FFFFFF;
+    background-color: black;
 }

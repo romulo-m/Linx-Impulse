@@ -1,11 +1,25 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import Text from "../Text/Text.jsx";
 import Forms from "../Forms/Forms";
+import Card from "../Card/Card.jsx";
+import Button from '../Button/Button.jsx'
 import SecForms from "../SecForms/SecForms.jsx";
-import Footer from "../Footer/Footer.jsx";
 import style from "./Main.module.css";
 
 const Main = () => {
+
+  const [infos, setInfos] = useState([]);
+  const [page, setPage] = useState(1)
+
+  async function handleRequisicao() {
+    const response = await fetch(`https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=${page}`);
+    const json = await response.json();
+    setInfos([...infos, ...json.products]);
+  }
+
+  useEffect(() => {handleRequisicao()}, [page]);
+
   return (
     <main>
       <section className={style.fSec}>
@@ -36,11 +50,27 @@ const Main = () => {
             <span className={style.line} />
           </div>
       </section>
-      <SecForms />
-      <Footer />
-      
-
-
+      <section className={style.cards}>
+      {
+        infos.length > 0 ?
+            infos.map((item, index) => {
+              return (
+                <Card
+                  key = {index}
+                  imagem = {item.image}
+                  nome = {item.name}
+                  descricao = {item.description}
+                  de = {item.oldPrice}
+                  por = {item.price}
+                  vezes = {item.installments.count}
+                  ou = {item.installments.value}
+                /> 
+              ); 
+            }) : ''
+       } 
+      </section>
+      <Button style={style.btn} onClick={() => setPage(page + 1)} conteudo="Adquira mais produtos aqui" />
+      <SecForms />    
     </main>
   );
 };
