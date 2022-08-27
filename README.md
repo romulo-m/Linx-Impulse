@@ -7,4 +7,4 @@ link do [mock do layout](https://xd.adobe.com/spec/4025e242-a495-4594-71d2-5fd89
 > endpoint da [API](https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1).
 <br>
 
-Link para verificar o resultado: (linx-impulse-77n6imnd1-romulo-m.vercel.app)
+Link para verificar o resultado: linx-impulse-77n6imnd1-romulo-m.vercel.app
